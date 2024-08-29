@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "paths": {
+      "@/*": ["./src/*"],
+      "@/components/*": ["./src/components/*"],
+      "@/images/*": ["./public/images/*"],
+      "@/icons/*": ["./public/icons/*"],
+      "@/vids/*": ["./public/vids/*"],
+      "@/styles": ["./src/styles/index.ts"],
+      "@/lib/*": ["./src/lib/*"],
+      "@/globalConstants": ["./src/globalConstants.ts"],
+      "@/fbAnalytics": ["./src/config/LogGaEvents.js"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"]
+}
